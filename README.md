@@ -40,13 +40,13 @@ sudo ufw enable
 ```bash
 sudo ufw status numbered
 ```
-📸 Screenshot: `screenshots/step-3-ufw-status.png`
+**Screenshot:** ![UFW Status](screenshots/step-3-ufw-status.jpg)
 
 ### 4️⃣ Block Port 23 (Telnet)
 ```bash
 sudo ufw deny 23
 ```
-📸 Screenshot: `screenshots/step-4-block-port-23.png`
+**Screenshot:** ![UFW Status](screenshots/step-4-block-port-23.jpg)
 
 ### 5️⃣ Test the Telnet Block
 If Telnet is not installed:
@@ -60,13 +60,13 @@ telnet localhost 23
 ```
 Expected result: **Connection refused**
 
-📸 Screenshot: `screenshots/step-5-test-telnet.png`
+**Screenshot:** ![UFW Status](screenshots/step-5-test-telnet.jpg)
 
 ### 6️⃣ Ensure SSH (Port 22) is Allowed
 ```bash
 sudo ufw allow 22
 ```
-📸 Screenshot: `screenshots/step-6-allow-ssh.png`
+**Screenshot:** ![UFW Status](screenshots/step-6-allow-ssh.jpg)
 
 ### 7️⃣ Remove Telnet Rule to Restore Original State
 First, list rules with numbers:
@@ -76,9 +76,10 @@ sudo ufw status numbered
 
 Then delete the Telnet rule (example shown as rule 2):
 ```bash
-sudo ufw delete 2
+sudo ufw delete 3
+sudo ufw delete 7
 ```
-📸 Screenshot: `screenshots/step-7-restore-state.png`
+**Screenshot:** ![UFW Status](screenshots/step-7-restore-state.jpg)
 
 ---
 
