@@ -19,7 +19,7 @@ Configure and test firewall rules to allow or block traffic using UFW.
 
 ---
 
-## 📋 Steps Done (in order)
+## 📋 Steps Done
 
 ### 1️⃣ Checked if UFW is installed and running
 ```bash
